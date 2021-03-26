@@ -141,6 +141,7 @@ typedef enum {
 - (void)adjustWhenControllerViewWillAppera;
 
 //////////////////////  自定义样式API  //////////////////////
+@property (nonatomic, weak) UICollectionView *mainView; // 显示图片的collectionView
 
 /** 轮播图片的ContentMode，默认为 UIViewContentModeScaleToFill */
 @property (nonatomic, assign) UIViewContentMode bannerImageViewContentMode;
