@@ -36,6 +36,7 @@
 @implementation SDCollectionViewCell
 {
     __weak UILabel *_titleLabel;
+    
 }
 
 
@@ -44,6 +45,7 @@
     if (self = [super initWithFrame:frame]) {
         [self setupImageView];
         [self setupTitleLabel];
+        [self addSubview:self.contentLabel];
     }
     
     return self;
@@ -110,7 +112,26 @@
         CGFloat titleLabelX = 0;
         CGFloat titleLabelY = self.sd_height - titleLabelH;
         _titleLabel.frame = CGRectMake(titleLabelX, titleLabelY, titleLabelW, titleLabelH);
+        _contentLabel.frame = CGRectMake(10, 0, self.sd_width - 20, self.sd_height - titleLabelH);
+
     }
+}
+
+- (UILabel *)contentLabel {
+    if (!_contentLabel) {
+        _contentLabel = [[UILabel alloc] init];
+//        _contentLabel.hidden = YES;
+//        _contentLabel.backgroundColor = [UIColor cyanColor];
+        _contentLabel.textColor = [UIColor whiteColor];
+        _contentLabel.numberOfLines = 0;
+        [self.contentView addSubview:_contentLabel];
+    }
+
+    return _contentLabel;
+}
+
+- (void)setContentLabelText:(NSString *)contentLabelText {
+    _contentLabel.text = contentLabelText;
 }
 
 @end

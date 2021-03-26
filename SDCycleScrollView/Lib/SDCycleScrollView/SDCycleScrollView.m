@@ -609,6 +609,10 @@ NSString * const ID = @"SDCycleScrollViewCell";
         cell.title = _titlesGroup[itemIndex];
     }
     
+    if (_contentsGroup.count && itemIndex < _contentsGroup.count) {
+        cell.contentLabelText = _contentsGroup[itemIndex];
+    }
+    
     if (!cell.hasConfigured) {
         cell.titleLabelBackgroundColor = self.titleLabelBackgroundColor;
         cell.titleLabelHeight = self.titleLabelHeight;
