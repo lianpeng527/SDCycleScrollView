@@ -102,9 +102,6 @@ typedef enum {
 /** 每张图片对应要显示的文字数组 */
 @property (nonatomic, strong) NSArray *titlesGroup;
 
-/** 每张图片对应要显示的覆盖 contentLabel文字数组 */
-@property (nonatomic, strong) NSArray *contentsGroup;
-
 /** 本地图片数组 */
 @property (nonatomic, strong) NSArray *localizationImageNamesGroup;
 
@@ -141,7 +138,6 @@ typedef enum {
 - (void)adjustWhenControllerViewWillAppera;
 
 //////////////////////  自定义样式API  //////////////////////
-@property (nonatomic, weak) UICollectionView *mainView; // 显示图片的collectionView
 
 /** 轮播图片的ContentMode，默认为 UIViewContentModeScaleToFill */
 @property (nonatomic, assign) UIViewContentMode bannerImageViewContentMode;

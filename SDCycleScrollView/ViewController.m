@@ -81,14 +81,6 @@
                         @"如果代码在使用过程中出现问题",
                         @"您可以发邮件到gsdios@126.com"
                         ];
-    // 情景三：文字覆盖图片
-    NSArray * contents = @[@"莲蓬：\n　　一个平凡的日子因你而不平凡，一个普通的时刻因你而不普通，今天的世界因你更精彩，今夜的星空因你更灿烂.",
-                        @"安峰：\n　　一个平凡的日子因你而不平凡，一个普通的时刻因你而不普通，今天的世界因你更精彩，今夜的星空因你更灿烂.",
-                        @"佟飞：\n　　一个平凡的日子因你而不平凡，一个普通的时刻因你而不普通，今天的世界因你更精彩，今夜的星空因你更灿烂.",
-                        @"建飞：\n　　一个平凡的日子因你而不平凡，一个普通的时刻因你而不普通，今天的世界因你更精彩，今夜的星空因你更灿烂.",
-                        @"蜜红：\n　　一个平凡的日子因你而不平凡，一个普通的时刻因你而不普通，今天的世界因你更精彩，今夜的星空因你更灿烂."
-                        ];
-    
     
     CGFloat w = self.view.bounds.size.width;
     
@@ -113,7 +105,6 @@
     
     cycleScrollView2.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
     cycleScrollView2.titlesGroup = titles;
-    cycleScrollView2.contentsGroup = contents;
     cycleScrollView2.currentPageDotColor = [UIColor whiteColor]; // 自定义分页控件小圆标颜色
     [demoContainerView addSubview:cycleScrollView2];
     

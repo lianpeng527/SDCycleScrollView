@@ -43,6 +43,7 @@ NSString * const ID = @"SDCycleScrollViewCell";
 @interface SDCycleScrollView () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 
+@property (nonatomic, weak) UICollectionView *mainView; // 显示图片的collectionView
 @property (nonatomic, weak) UICollectionViewFlowLayout *flowLayout;
 @property (nonatomic, strong) NSArray *imagePathsGroup;
 @property (nonatomic, weak) NSTimer *timer;
@@ -608,10 +609,6 @@ NSString * const ID = @"SDCycleScrollViewCell";
         cell.title = _titlesGroup[itemIndex];
     }
     
-    if (_contentsGroup.count && itemIndex < _contentsGroup.count) {
-        cell.contentLabelText = _contentsGroup[itemIndex];
-    }
-    
     if (!cell.hasConfigured) {
         cell.titleLabelBackgroundColor = self.titleLabelBackgroundColor;
         cell.titleLabelHeight = self.titleLabelHeight;
@@ -623,6 +620,7 @@ NSString * const ID = @"SDCycleScrollViewCell";
         cell.clipsToBounds = YES;
         cell.onlyDisplayText = self.onlyDisplayText;
     }
+    
     return cell;
 }
 

@@ -31,8 +31,6 @@
 
 
 #import <UIKit/UIKit.h>
-#import "SDCycleBirthdayView.h"
-
 
 @interface SDCollectionViewCell : UICollectionViewCell
 
@@ -49,11 +47,5 @@
 
 /** 只展示文字轮播 */
 @property (nonatomic, assign) BOOL onlyDisplayText;
-//contentLabel  覆盖到图片上的 label
-@property (nonatomic, strong) UILabel *contentLabel;
-// 覆盖到图片上的 label文字
-@property (nonatomic, copy) NSString *contentLabelText;
-
-@property (nonatomic, strong) SDCycleBirthdayView *birthdayView;
 
 @end
