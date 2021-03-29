@@ -623,7 +623,6 @@ NSString * const ID = @"SDCycleScrollViewCell";
         cell.clipsToBounds = YES;
         cell.onlyDisplayText = self.onlyDisplayText;
     }
-    
     return cell;
 }
 

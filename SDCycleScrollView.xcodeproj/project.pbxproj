@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		073A735626118635007D7C67 /* SDCycleBirthdayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 073A735526118635007D7C67 /* SDCycleBirthdayView.xib */; };
+		073A735B2611864A007D7C67 /* SDCycleBirthdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 073A735A2611864A007D7C67 /* SDCycleBirthdayView.m */; };
 		48377B901C1027F5007B8C21 /* DemoVCWithXib.m in Sources */ = {isa = PBXBuildFile; fileRef = 48377B8E1C1027F5007B8C21 /* DemoVCWithXib.m */; };
 		48377B911C1027F5007B8C21 /* DemoVCWithXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48377B8F1C1027F5007B8C21 /* DemoVCWithXib.xib */; };
 		4855B1941B09CBA500AA0788 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4855B1931B09CBA500AA0788 /* placeholder@2x.png */; };
@@ -47,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		073A735526118635007D7C67 /* SDCycleBirthdayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDCycleBirthdayView.xib; sourceTree = "<group>"; };
+		073A73592611864A007D7C67 /* SDCycleBirthdayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDCycleBirthdayView.h; sourceTree = "<group>"; };
+		073A735A2611864A007D7C67 /* SDCycleBirthdayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDCycleBirthdayView.m; sourceTree = "<group>"; };
 		48377B8D1C1027F5007B8C21 /* DemoVCWithXib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoVCWithXib.h; sourceTree = "<group>"; };
 		48377B8E1C1027F5007B8C21 /* DemoVCWithXib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoVCWithXib.m; sourceTree = "<group>"; };
 		48377B8F1C1027F5007B8C21 /* DemoVCWithXib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoVCWithXib.xib; sourceTree = "<group>"; };
@@ -239,6 +244,9 @@
 				990141091AC9420E00D0D74F /* UIView+SDExtension.h */,
 				9901410A1AC9420E00D0D74F /* UIView+SDExtension.m */,
 				99E7B30B1AC11F1C009F9A2E /* PageControl */,
+				073A735526118635007D7C67 /* SDCycleBirthdayView.xib */,
+				073A73592611864A007D7C67 /* SDCycleBirthdayView.h */,
+				073A735A2611864A007D7C67 /* SDCycleBirthdayView.m */,
 			);
 			path = SDCycleScrollView;
 			sourceTree = "<group>";
@@ -329,6 +337,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -359,6 +368,7 @@
 				485B547A1C3A196C001944FA /* pageControlCurrentDot@2x.png in Resources */,
 				48377B911C1027F5007B8C21 /* DemoVCWithXib.xib in Resources */,
 				9900D17F1ABEB2490077A6CB /* Images.xcassets in Resources */,
+				073A735626118635007D7C67 /* SDCycleBirthdayView.xib in Resources */,
 				485B54791C3A196C001944FA /* pageControlCurrentDot@3x.png in Resources */,
 				9900D1A01ABEB41B0077A6CB /* h2.jpg in Resources */,
 			);
@@ -401,6 +411,7 @@
 			files = (
 				9900D17A1ABEB2490077A6CB /* ViewController.m in Sources */,
 				990141031AC941FD00D0D74F /* TADotView.m in Sources */,
+				073A735B2611864A007D7C67 /* SDCycleBirthdayView.m in Sources */,
 				990141011AC941FD00D0D74F /* TAAbstractDotView.m in Sources */,
 				6BAA27FD1EFEA798008693AB /* CustomCollectionViewCell.m in Sources */,
 				990141021AC941FD00D0D74F /* TAAnimatedDotView.m in Sources */,

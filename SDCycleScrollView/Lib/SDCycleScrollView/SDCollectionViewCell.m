@@ -46,6 +46,8 @@
         [self setupImageView];
         [self setupTitleLabel];
         [self addSubview:self.contentLabel];
+        [self addSubview:self.birthdayView];
+        self.birthdayView.hidden = YES;
     }
     
     return self;
@@ -112,7 +114,10 @@
         CGFloat titleLabelX = 0;
         CGFloat titleLabelY = self.sd_height - titleLabelH;
         _titleLabel.frame = CGRectMake(titleLabelX, titleLabelY, titleLabelW, titleLabelH);
-        _contentLabel.frame = CGRectMake(10, 0, self.sd_width - 20, self.sd_height - titleLabelH);
+//        _contentLabel.frame = CGRectMake(10, 0, self.sd_width - 20, self.sd_height - titleLabelH);
+        _birthdayView.frame=CGRectMake(0, self.sd_height - 50, self.sd_width, 50);
+
+        
 
     }
 }
@@ -131,7 +136,22 @@
 }
 
 - (void)setContentLabelText:(NSString *)contentLabelText {
-    _contentLabel.text = contentLabelText;
+//    _contentLabel.text = contentLabelText;
+    if (contentLabelText.length != 0) {
+        self.birthdayView.topLabel.text = contentLabelText;
+        self.birthdayView.hidden = NO;
+    }else{
+        self.birthdayView.hidden = YES;
+
+    }
+}
+
+- (SDCycleBirthdayView *)birthdayView
+{
+    if (!_birthdayView) {
+        _birthdayView=[[NSBundle mainBundle] loadNibNamed:@"SDCycleBirthdayView" owner:self options:nil].firstObject;
+    }
+    return _birthdayView;
 }
 
 @end
