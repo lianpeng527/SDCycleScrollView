@@ -113,6 +113,7 @@ typedef enum {
 
 /** 自动滚动间隔时间,默认2s */
 @property (nonatomic, assign) CGFloat autoScrollTimeInterval;
+@property (nonatomic, weak) UICollectionView *mainView; // 显示图片的collectionView
 
 /** 是否无限循环,默认Yes */
 @property (nonatomic,assign) BOOL infiniteLoop;
